@@ -1,7 +1,16 @@
 import React from 'react';
 import './styles.css';
 import { ReturnUpBack } from '@styled-icons/ionicons-outline/ReturnUpBack';
-import { Input } from 'reactbulma';
+import { UserCircle } from '@styled-icons/boxicons-regular/UserCircle';
+import { DocumentPageNumber } from '@styled-icons/fluentui-system-filled/DocumentPageNumber';
+import { Phone } from '@styled-icons/boxicons-regular/Phone';
+import { EmailOutline } from '@styled-icons/evaicons-outline/EmailOutline';
+import { Address } from '@styled-icons/entypo/Address';
+import { Global } from '@styled-icons/remix-line/Global';
+import { City } from '@styled-icons/boxicons-solid/City';
+import { MoneyBillAlt } from '@styled-icons/fa-regular/MoneyBillAlt';
+
+import { Input, Control, Icon } from 'reactbulma';
 import { ButtonForm } from './button';
 
 import { Button, Form, SelectState, HeaderForm } from './style';
@@ -41,29 +50,55 @@ function Cadastro() {
         <HeaderForm>Novo Registro</HeaderForm>
 
         <div>
-          <label htmlFor='nome'>Nome</label>
-          <Input id='nome' />
+          <Control hasIconsRight>
+            <Input placeholder='Nome' />
+            <Icon right>
+              <UserCircle />
+            </Icon>
+          </Control>
 
-          <label htmlFor='cpf'>CPF</label>
-          <Input id='cpf' />
-
-          <label htmlFor='fone'>Fone/Wats:</label>
-          <Input id='fone' />
-
-          <label htmlFor='e-mail'>E-mail:</label>
-          <Input id='e-mail' />
-
-          <label htmlFor='endereco'>Endereço</label>
-          <Input id='endereco' />
-
-          <label htmlFor='estado'>Estado</label>
-          <SelectState value={estados} name='estados' id='estado' />
-
-          <label htmlFor='cidade'>Cidade</label>
-          <Input id='cidade' />
-
-          <label htmlFor='normal'>Valor</label>
-          <Input id='normal' />
+          <Control hasIconsRight>
+            <Input placeholder='CPF' />
+            <Icon right>
+              <DocumentPageNumber />
+            </Icon>
+          </Control>
+          <Control hasIconsRight>
+            <Input placeholder='Fone/Wats' />
+            <Icon right>
+              <Phone />
+            </Icon>
+          </Control>
+          <Control hasIconsRight>
+            <Input placeholder='Email' type='email' />
+            <Icon right>
+              <EmailOutline />
+            </Icon>
+          </Control>
+          <Control hasIconsRight>
+            <Input placeholder='Endereço' />
+            <Icon right>
+              <Address />
+            </Icon>
+          </Control>
+          <Control hasIconsRight>
+            <SelectState value={estados} name='estados' id='estado' />
+            <Icon right>
+              <Global />
+            </Icon>
+          </Control>
+          <Control hasIconsRight>
+            <Input placeholder='Cidade' />
+            <Icon right>
+              <City />
+            </Icon>
+          </Control>
+          <Control hasIconsRight>
+            <Input placeholder='Valor' />
+            <Icon right>
+              <MoneyBillAlt />
+            </Icon>
+          </Control>
           <ButtonForm />
         </div>
       </Form>

@@ -52,10 +52,11 @@ color: #34495E;
 text-align: center;
 font-weight: bold;
 border-width: 0px 20px 20px 20px;
-border-radius:  0px 0px 15px 15px;
+border-radius:  0px 0px 50px 50px;
 border-style: solid;
+color: aliceblue;
 border-color: var(--header);
-background-color:#F8F9F9;
+background-color:var(--header);
 
 `
 export const Button = styled(Link)`
@@ -77,17 +78,18 @@ export const Button = styled(Link)`
     border: 5px solid #6c3c37;
   }
 `;
-export const Form = styled.div`
+export const Form = styled.span`
   display: flex;
   align-items: center;
   align-content: center;
   flex-direction: column;
+  
   div {
-    display: flex;
-    width: 60%;
-    flex-direction: column;
+    width: 80vw;    
+    flex-direction: column; 
+       
   }
-  & > input {
-    width: 100%;
-  }
+ input, span, select {
+   height: 40px;margin: 10px 0px;
+ }
 `;
