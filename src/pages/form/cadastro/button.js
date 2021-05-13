@@ -1,10 +1,24 @@
-import { CurrencyDollar } from '@styled-icons/heroicons-solid/CurrencyDollar';
-import {Button, Icon}from 'reactbulma'
-export const ButtonForm = ({marg, cor}) => (
-  <Button success style={{marginTop: marg||'20px', background: cor || "#1ABC9C"}}>
-    <Icon large>
-      <CurrencyDollar />
-    </Icon>
-    <span>Save</span>
-  </Button>
+
+import { Control, Button } from 'reactbulma';
+export const ButtonForm = ({ marg, cor, message }) => (
+  <Control>
+    <Button
+      success
+      style={{
+        marginTop: marg || '20px',
+        height: '40px',
+        background: cor || '#1ABC9C',
+        width: '80vw',
+        padding: '10px',
+        display: 'flex',
+        justifyContent: 'center'
+      }}
+    >
+      <span>
+       
+    
+        {message || 'Button'}
+      </span>
+    </Button>
+  </Control>
 );

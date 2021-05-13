@@ -43,7 +43,7 @@ export const SerchCpf = styled(CpfCnpj)`
   font-weight: bold;
   font-family: 'roboto';
   color: gray;
-  background: aliceblue;
+  /* background: aliceblue; */
 `;
 export const HeaderForm = styled.div`
 margin-bottom: 10px;

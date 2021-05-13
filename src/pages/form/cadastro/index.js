@@ -99,7 +99,8 @@ function Cadastro() {
               <MoneyBillAlt />
             </Icon>
           </Control>
-          <ButtonForm />
+          <Control><ButtonForm message="Salvar" marg='10px' /></Control>
+          
         </div>
       </Form>
       <Button to='/'>

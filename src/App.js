@@ -1,17 +1,14 @@
 import { Header } from './components/header';
-import { Home } from './components/home';
-import { Search } from './components/search';
 import Rota from './route';
-
+import {Template} from './style'
 function App() {
   return (
     <>
-      <Header />
-      <Rota>
-        <Home>
-          <Search />
-        </Home>
-      </Rota>
+      <Template>
+    
+        <Header />
+        <Rota />
+      </Template>
     </>
   );
 }

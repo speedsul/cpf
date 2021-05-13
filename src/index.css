@@ -45,6 +45,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
 ol, ul {
 	list-style: none;
@@ -64,4 +65,7 @@ table {
 :root {
   --header: rgb(41, 226, 195);
   
+}
+html {
+	background-color: transparent !important;
 }
